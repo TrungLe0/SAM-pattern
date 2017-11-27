@@ -1,15 +1,9 @@
 // Action
 var action = {};
 
-action.save = () => {
-	var name = document.getElementById('name').value.trim();
-	var id = parseFloat(document.getElementById('id').value);
-	if(name){
-		model.present({'id': id, 'name': name});
-		document.getElementById('name').value = "";
-		document.getElementById('id').value = "";
-	}
-	
+action.save = (data) => {
+	if(data.name)
+		model.present({'id': data.id, 'name': data.name});
 };
 
 action.delete = (data) => {
@@ -17,5 +11,5 @@ action.delete = (data) => {
 };
 
 action.edit = (data) => {
-	model.present({'getName': data});
+	model.present({'editId': data});
 }
