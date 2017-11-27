@@ -1,0 +1,61 @@
+.container{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+input{
+	font-size: 20px;
+	height: 40px;
+	width: 80%;
+	padding: 5px 10px;
+	border-radius: 30px;
+	border-color: blue;
+}
+
+input:focus{
+	outline: none;
+}
+
+button{
+	padding: 5px;
+    width: 60px;
+    height: 30px;
+    color: #fff;
+}
+
+button.btn-add{
+	margin: 5px auto;
+	background-color: #3498db;
+	border-color: #3498db;
+	display: block;
+}
+
+button.btn-del, button.btn-edit{
+	margin-left: 10px;
+	float: right;
+}
+
+button.btn-del{
+	background-color: #e74c3c;
+	border-color: #e74c3c;
+}
+
+button.btn-edit{
+	background-color: #bdc3c7;
+	border-color: #bdc3c7;
+}
+
+ul{
+	list-style: none;
+	text-align: left;
+}
+
+ul>li{
+	font-size: 20px;
+	padding: 10px;
+}
+
+h1{
+	text-transform: uppercase;
+}
